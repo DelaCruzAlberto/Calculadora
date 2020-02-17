@@ -1,7 +1,19 @@
-let numeros = [1,8,4,9,34,67,109]
-console.log(numeros);
-let arrayMezclado = [99,"Iron man",4.77 ,true,false]
-console.log(arrayMezclado);
-let miArray = [];
-miArray.push("Deadpool");
+let miArray = [
+    {
+        nombre: "Spider Man",
+        edad: 17,
+        armas: false
+    },
+    {
+        nombre: "Hulk",
+        edad: 32,
+        armas: false
+    },
+    {
+        nombre: "Iron Man",
+        edad: 41,
+        armas: true
+    }
+]
 console.log(miArray);
+console.log(miArray[2].armas ? "Si que tiene armas":"No tiene armas")
