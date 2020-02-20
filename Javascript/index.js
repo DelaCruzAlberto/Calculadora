@@ -1,6 +1,8 @@
 
 
-function getPeliculasPopulares(){
+/*
+    Funcion para extraer un array de peliculas de una API
+PeliculasPopulares(){
     const url="https://api.themoviedb.org/3/movie/popular?api_key=5d30872160ed32519074df96b2db3ecd&language=es-ES&page=1";
     fetch(url).then(Response => {
         return Response.json();
@@ -15,4 +17,4 @@ function getPeliculasPopulares(){
     })
 }
 
-getPeliculasPopulares();
+getPeliculasPopulares(); */
