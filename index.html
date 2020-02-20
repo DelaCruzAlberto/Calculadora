@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="Javascript/index.js" type="text/javascript"></script>
-    <title>Test</title>
+    <title>Calculadora</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <h1>Calculadora</h1>
+    <div class="calculator">
+        <input type="text" class="calculator_screen" value="0" placeholder="" disabled/>
+        <div class="calculator_keypad">
+            <button onclick="getContectClick(event)" class="btn btn-dark">AC</button>
+            <button onclick="getContectClick(event)" class="btn btn-dark">+/-</button>
+            <button onclick="getContectClick(event)" class="btn btn-dark">%</button>
+            <button onclick="getContectClick(event)" class="btn btn-orange">/</button>
+
+            <button onclick="getContectClick(event)" class="btn">7</button>
+            <button onclick="getContectClick(event)" class="btn">8</button>
+            <button onclick="getContectClick(event)" class="btn">9</button>
+            <button onclick="getContectClick(event)" class="btn btn-orange">x</button>
+
+            <button onclick="getContectClick(event)" class="btn">4</button>
+            <button onclick="getContectClick(event)" class="btn">5</button>
+            <button onclick="getContectClick(event)" class="btn">6</button>
+            <button onclick="getContectClick(event)" class="btn btn-orange">-</button>
+
+            <button onclick="getContectClick(event)" class="btn">1</button>
+            <button onclick="getContectClick(event)" class="btn">2</button>
+            <button onclick="getContectClick(event)" class="btn">3</button>
+            <button onclick="getContectClick(event)" class="btn btn-orange">+</button>
+
+            <button onclick="getContectClick(event)" class="btn">0</button>
+            <button onclick="getContectClick(event)" class="btn">,</button>
+            <button onclick="getContectClick(event)" class="btn btn-orange">=</button>
+
+
+
+        </div>
+    </div>
 </body>
 </html>

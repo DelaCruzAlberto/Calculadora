@@ -1,19 +1,18 @@
-let miArray = [
-    {
-        nombre: "Spider Man",
-        edad: 17,
-        armas: false
-    },
-    {
-        nombre: "Hulk",
-        edad: 32,
-        armas: false
-    },
-    {
-        nombre: "Iron Man",
-        edad: 41,
-        armas: true
-    }
-]
-console.log(miArray);
-console.log(miArray[2].armas ? "Si que tiene armas":"No tiene armas")
+
+
+function getPeliculasPopulares(){
+    const url="https://api.themoviedb.org/3/movie/popular?api_key=5d30872160ed32519074df96b2db3ecd&language=es-ES&page=1";
+    fetch(url).then(Response => {
+        return Response.json();
+    }).then(result => {
+        console.log(result);
+        const peliculas = result.results;
+         peliculas.forEach(pelicula => {
+             const {title, vote_count, vote_Average, poster_path} = pelicula
+
+             console.log(title);
+         });
+    })
+}
+
+getPeliculasPopulares();
